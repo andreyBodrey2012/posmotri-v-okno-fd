@@ -195,11 +195,6 @@ ol {
   padding: 10px 10px;
 }
 
-.search-form__fieldset {
-  display: flex;
-  flex-direction: column;
-}
-
 .search-form__checkbox-list {
   display: flex;
   gap: 16px;
@@ -216,7 +211,6 @@ ol {
 
 .search-form__pseudo-checkbox {
   display: inline-flex;
-  position: relative;
   width: 19px;
   height: 19px;
   border: 1px solid #FFFFFF;
@@ -226,10 +220,10 @@ ol {
 }
 
 .search-form__pseudo-checkbox::before {
+  display: inline-flex;
+  flex: 1;
   content: "";
-  position: absolute;
-  z-index: 1;
-  inset: 1px;
+  margin: 1px;
   opacity: 0;
   transition: opacity 0.2s;
   background-color: #fff;
